@@ -103,28 +103,9 @@ hr {
   border-radius: 6px;
 }
 
-/* Card css */
+/* Displaying cards css */
 
-.card {
-  color: #ffffff;
-  position: absolute;
-  width: 325px;
-  height: 454px;
-  left: 40px;
-  top: 448px;
-  background: #1D1F25;
-  border-radius: 10px;
-}
-
-
-.card-body {
-  background-color: #1D1F25
-}
-
-.card-title{
-  background-color: #1D1F25;
-}
-
-.card-text{
-  background-color: #1D1F25;
+.row{
+  margin-top: 100px;
+  padding: 10px;
 }
