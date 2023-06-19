@@ -8,12 +8,13 @@ function App() {
   const customStyle = {
     color: 'white',
     backgroundColor: '#1D1F25',
-    // borderRadius: '25px',
+    borderRadius: '23px',
     fontWeight: '60',
     padding: '10px',
     float: 'left',
     marginLeft: '40px',
-    marginTop: '15px'
+    marginTop: '15px', 
+    width: '120px'
   };
 
   const cardContents = [
@@ -23,7 +24,8 @@ function App() {
       alt: 'Image for course of time management',
       title: 'Time management for everyone',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      button: 'Go to course'
+      button: 'Read More', 
+      type: 'S E L F  H E L P'
     },
     {
       id: '2',
@@ -31,7 +33,8 @@ function App() {
       alt: 'maths image',
       title: 'Calculus for beginners',
       text: 'This course in calculus is for all who wish to master it',
-      button: 'Go to course'
+      button: 'Read More', 
+      type: 'M A T H S'
     },
     {
       id: '3',
@@ -39,7 +42,8 @@ function App() {
       alt: 'Image of the course',
       title: 'Finance for beginners in business',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      button: 'Go to course'
+      button: 'Read More', 
+      type: 'F I N A N C E'
     },
     {
       id: '4',
@@ -47,7 +51,8 @@ function App() {
       alt: 'Image for the course',
       title: 'Basics of art and color',
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      button: 'Go to course'
+      button: 'Read More', 
+      type: 'T H E R A P Y'
     }
   ];
 
@@ -57,6 +62,52 @@ function App() {
         <Header />
         <Categories style={customStyle} />
         <div className="container text-center">
+          <div className="row">
+            <div className="col">
+              <Card2
+                type={cardContents[0].type}
+                title={cardContents[0].title}
+                text={cardContents[0].text}
+                image={cardContents[0].image}
+                alt={cardContents[0].alt}
+                button={cardContents[0].button}
+                key={cardContents[0].id}
+              />
+            </div>
+            <div className="col">
+              <Card2
+                type={cardContents[1].type}
+                title={cardContents[1].title}
+                text={cardContents[1].text}
+                image={cardContents[1].image}
+                alt={cardContents[1].alt}
+                button={cardContents[1].button}
+                key={cardContents[1].id}
+              />
+            </div>
+            <div className="col">
+              <Card2
+                type={cardContents[2].type}
+                title={cardContents[2].title}
+                text={cardContents[2].text}
+                image={cardContents[2].image}
+                alt={cardContents[2].alt}
+                button={cardContents[2].button}
+                key={cardContents[2].id}
+              />
+            </div>
+            <div className="col">
+              <Card2
+                type={cardContents[3].type}
+                title={cardContents[3].title}
+                text={cardContents[3].text}
+                image={cardContents[3].image}
+                alt={cardContents[3].alt}
+                button={cardContents[3].button}
+                key={cardContents[3].id}
+              />
+            </div>
+          </div>
           <div className="row">
             <div className="col">
               <Card2

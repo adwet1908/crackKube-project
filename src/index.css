@@ -49,6 +49,7 @@ li {
   top: 0px;
   color: #ffffff;
   background-color: #1D1F25;
+  justify-content: space-evenly;
 }
 
 .nav-items {
@@ -82,6 +83,24 @@ hr {
   border: 1px solid #ffffff;
 }
 
+#profile-picture {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 1357px;
+  top: 30px;
+  border-radius: 100%;
+}
+
+/* .gear{
+  position: absolute;
+  color: #ffffff;
+}
+
+.bell{
+
+} */
+
 /* header css */
 
 #header-line {
@@ -103,9 +122,48 @@ hr {
   border-radius: 6px;
 }
 
+
 /* Displaying cards css */
 
-.row{
+.row {
   margin-top: 100px;
   padding: 10px;
+}
+
+.card {
+  background-color: #1D1F25;
+  color: white;
+  margin: 5px;
+  width: 330px;
+  height: 440px;
+}
+
+.card-text {
+  background-color: #1D1F25;
+  text-align: left;
+  font-size: small;
+  opacity: 0.3;
+  font-weight: lighter;
+  padding-top: 8px;
+}
+
+.card-title {
+  background-color: #1D1F25;
+  justify-self: start;
+}
+
+.card-body {
+  background-color: #1D1F25;
+}
+
+.card-type {
+  background-color: #1D1F25;
+  padding-right: 155px;
+  color: #FFBB29;
+}
+
+.btn-primary {
+  float: left;
+  color: #FFBB29;
+  align-self: flex-end;
 }
