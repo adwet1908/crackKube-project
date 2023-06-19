@@ -23,8 +23,8 @@ export default function Navbar(props) {
                         <li className="nav-item" id="blog">Blog</li>
                     </ul>
                 </div>
-                <div>
-                    <div className="icons">
+                <div>  
+                    <div className="icons" style={{backgroundColor: '#1D1F25'}}>
                         {gear}
                         {bell}
                     </div>
